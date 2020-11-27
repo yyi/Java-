@@ -25,7 +25,7 @@ public class BTraceTest {
             location=@Location(Kind.RETURN)
     )
     public static void traceExecute(@Return boolean result ,
-                                    @Self chapter3.tools.btrace.TestHello testHello,
+                                    @Self chapter03.tools.btrace.TestHello testHello,
                                     @ProbeClassName String className,
                                     @ProbeMethodName String methodName,
                                     int time ,
@@ -48,6 +48,6 @@ public class BTraceTest {
          jstack();
          println(strcat("delay:" , str(timeMillis() - startTime)));
          println(strcat("return value is:",str(result)));
-         
+
     }
 }
